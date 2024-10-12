@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SmokeTest">
+
+	<groups>
+		<run>
+			<include name="SmokeTest" />
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReportListener" />
+	</listeners>
+	<test name="Sanity" preserve-order="true">
+		
+<classes>
+<class name="com.qa.bps.test.LoginPageTest" />
+<class name="com.qa.bps.test.BodheeStudioTest" />
+ <class name="com.qa.bps.test.HomePageTest"/>
+<class name="com.qa.bps.test.AdminConsoleTest" />
+<class name="com.qa.bps.test.ShiftPatternTest" />
+<class name="com.qa.bps.test.IAMTest" />
+<class name="com.qa.bps.test.FactoryCalendarTest" />
+<class name="com.qa.bps.test.FunctionalAreaTest" />
+<class name="com.qa.bps.test.FunctionalAreaTest" />
+<class name="com.qa.bps.test.HolidayCalenderTest" />
+<class name="com.qa.bps.test.MasterDataTest" />
+<class name="com.qa.bps.test.MaterialMasterTest" />
+<class name="com.qa.bps.test.MicroPlanningTest" />
+<!-- <class name="com.qa.bps.test.FileUploadTest" />	-->
+<class name="com.qa.bps.test.PlannerTest" />
+<class name="com.qa.bps.test.PlanDetailsTest" />
+<class name="com.qa.bps.test.SkillMatrixTest" />
+<class name="com.qa.bps.test.ControlTowerTest" />
+<class name="com.qa.bps.test.ManagerTest" />
+<class name="com.qa.bps.test.ManagerViewTest" />
+<class name="com.qa.bps.test.ShiftSummaryHandoverTest" />
+<class name="com.qa.bps.test.ProductViewDelayMgmtTest" />
+<class name="com.qa.bps.test.ProductOverviewTest" />
+<class name="com.qa.bps.test.PlantViewTest" />
+<!--<class name="com.qa.bps.test.EquipmentSchedulingTest" /> -->
+<class name="com.qa.bps.test.SummaryDashboardTest" />
+<class name="com.qa.bps.test.KPIManagementTest" />
+<class name="com.qa.bps.test.CycleTimeAnalysisTest" />
+<class name="com.qa.bps.test.DelayAnalysisTest" />
+<class name="com.qa.bps.test.EquipmentRelaunchTimeTest" />
+<class name="com.qa.bps.test.ScheduleAdheranceReportTest" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

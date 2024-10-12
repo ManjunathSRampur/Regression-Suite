@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="25" passed="21" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-11T21:57:50 IST" name="Default suite" finished-at="2024-04-11T22:03:14 IST" duration-ms="323391">
+    <groups>
+      <group name="SmokeTest">
+        <method signature="ShiftPatternTest.DeselectChkBox()[pri:14, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="DeselectChkBox" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.cofigureNewShiftPattern()[pri:16, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="cofigureNewShiftPattern" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.createShiftinFectoryCal()[pri:9, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="createShiftinFectoryCal" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.deleteShiftFromFectoryCal()[pri:11, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="deleteShiftFromFectoryCal" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.downloadShiftPattern()[pri:17, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="downloadShiftPattern" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.intigrationOfShiftFromFectoryCal()[pri:10, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="intigrationOfShiftFromFectoryCal" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.markAnOperatorUnavailable()[pri:24, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="markAnOperatorUnavailable" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.markAnOperatoravailable()[pri:25, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="markAnOperatoravailable" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.selectChkBox()[pri:13, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="selectChkBox" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.selectTeamAndOperatorFunctionality()[pri:23, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="selectTeamAndOperatorFunctionality" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.shiftPttnDownloadToolTip()[pri:1, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="shiftPttnDownloadToolTip" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.teamShiftPttniconToolTip()[pri:2, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="teamShiftPttniconToolTip" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.uncheckAllTheChekbox()[pri:15, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="uncheckAllTheChekbox" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifyAllavailablefieldsOperatorShift()[pri:3, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifyAllavailablefieldsOperatorShift" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifyDuplicateDatesInOperatorShiftScreen()[pri:22, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifyDuplicateDatesInOperatorShiftScreen" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifyFiledOfOperatorShiftPattern()[pri:19, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifyFiledOfOperatorShiftPattern" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifyHolidayBtnFuntion()[pri:20, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifyHolidayBtnFuntion" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifyMoveToNextMonth()[pri:8, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifyMoveToNextMonth" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifyMoveToPreviousMonth()[pri:7, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifyMoveToPreviousMonth" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifyOperatorShiftTabNavigation()[pri:18, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifyOperatorShiftTabNavigation" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifyShiftDeletedFromShiftPattern()[pri:12, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifyShiftDeletedFromShiftPattern" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifyWorkingHoursBtnFuntion()[pri:21, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifyWorkingHoursBtnFuntion" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifysearchFunctionalityofOperatorShift1TeamShiftScreen()[pri:5, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifysearchFunctionalityofOperatorShift1TeamShiftScreen" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifysearchFunctionalityofOperatorShift2Team()[pri:6, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifysearchFunctionalityofOperatorShift2Team" class="com.qa.bps.test.ShiftPatternTest"/>
+        <method signature="ShiftPatternTest.verifytoggleButtonOfOvertimeShiftTeamshiftTab()[pri:4, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" name="verifytoggleButtonOfOvertimeShiftTeamshiftTab" class="com.qa.bps.test.ShiftPatternTest"/>
+      </group> <!-- SmokeTest -->
+    </groups>
+    <test started-at="2024-04-11T21:57:50 IST" name="Default test" finished-at="2024-04-11T22:03:14 IST" duration-ms="323391">
+      <class name="com.qa.bps.test.ShiftPatternTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:57:50 IST" name="setUp" finished-at="2024-04-11T21:57:59 IST" duration-ms="8684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.bodhee.com/qa/qa1/home]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[automationadmin@neewee.ai]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[@neewee.ai]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Spider@8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="homePageSetup()[pri:0, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:57:59 IST" name="homePageSetup" finished-at="2024-04-11T21:59:00 IST" duration-ms="60675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageSetup -->
+        <test-method signature="shiftPttnDownloadToolTip()[pri:1, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:59:00 IST" name="shiftPttnDownloadToolTip" finished-at="2024-04-11T21:59:02 IST" duration-ms="2165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shiftPttnDownloadToolTip -->
+        <test-method signature="teamShiftPttniconToolTip()[pri:2, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:59:02 IST" name="teamShiftPttniconToolTip" finished-at="2024-04-11T21:59:05 IST" duration-ms="3145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teamShiftPttniconToolTip -->
+        <test-method signature="verifyAllavailablefieldsOperatorShift()[pri:3, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:59:05 IST" name="verifyAllavailablefieldsOperatorShift" finished-at="2024-04-11T21:59:10 IST" duration-ms="4281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllavailablefieldsOperatorShift -->
+        <test-method signature="verifytoggleButtonOfOvertimeShiftTeamshiftTab()[pri:4, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:59:10 IST" name="verifytoggleButtonOfOvertimeShiftTeamshiftTab" finished-at="2024-04-11T21:59:10 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytoggleButtonOfOvertimeShiftTeamshiftTab -->
+        <test-method signature="verifysearchFunctionalityofOperatorShift1TeamShiftScreen()[pri:5, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:59:10 IST" name="verifysearchFunctionalityofOperatorShift1TeamShiftScreen" finished-at="2024-04-11T21:59:16 IST" duration-ms="6562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifysearchFunctionalityofOperatorShift1TeamShiftScreen -->
+        <test-method signature="verifysearchFunctionalityofOperatorShift2Team()[pri:6, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:59:16 IST" name="verifysearchFunctionalityofOperatorShift2Team" finished-at="2024-04-11T21:59:21 IST" duration-ms="4960" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//th[@scope='row'])[7]"}
+  (Session info: chrome=123.0.6312.106)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44f6ba51e50cd93cfd4a7e0a368aa29, findElement {value=(//th[@scope='row'])[7], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53498/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a44f6ba51e50cd93cfd4a7e0a368aa29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//th[@scope='row'])[7]"}
+  (Session info: chrome=123.0.6312.106)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44f6ba51e50cd93cfd4a7e0a368aa29, findElement {value=(//th[@scope='row'])[7], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53498/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a44f6ba51e50cd93cfd4a7e0a368aa29
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at com.qa.bps.pages.ShiftPattern.searchFunctionOptShift2Team(ShiftPattern.java:216)
+at com.qa.bps.test.ShiftPatternTest.verifysearchFunctionalityofOperatorShift2Team(ShiftPatternTest.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifysearchFunctionalityofOperatorShift2Team -->
+        <test-method signature="verifyMoveToPreviousMonth()[pri:7, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:59:21 IST" name="verifyMoveToPreviousMonth" finished-at="2024-04-11T21:59:26 IST" duration-ms="4428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMoveToPreviousMonth -->
+        <test-method signature="verifyMoveToNextMonth()[pri:8, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:59:26 IST" name="verifyMoveToNextMonth" finished-at="2024-04-11T21:59:27 IST" duration-ms="1277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMoveToNextMonth -->
+        <test-method signature="createShiftinFectoryCal()[pri:9, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T21:59:27 IST" name="createShiftinFectoryCal" finished-at="2024-04-11T22:00:02 IST" duration-ms="34626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createShiftinFectoryCal -->
+        <test-method signature="intigrationOfShiftFromFectoryCal()[pri:10, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:00:02 IST" name="intigrationOfShiftFromFectoryCal" finished-at="2024-04-11T22:00:11 IST" duration-ms="9560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intigrationOfShiftFromFectoryCal -->
+        <test-method signature="deleteShiftFromFectoryCal()[pri:11, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:00:11 IST" name="deleteShiftFromFectoryCal" finished-at="2024-04-11T22:00:31 IST" duration-ms="20247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteShiftFromFectoryCal -->
+        <test-method signature="verifyShiftDeletedFromShiftPattern()[pri:12, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:00:31 IST" name="verifyShiftDeletedFromShiftPattern" finished-at="2024-04-11T22:00:38 IST" duration-ms="6408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShiftDeletedFromShiftPattern -->
+        <test-method signature="selectChkBox()[pri:13, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:00:38 IST" name="selectChkBox" finished-at="2024-04-11T22:00:54 IST" duration-ms="16729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectChkBox -->
+        <test-method signature="DeselectChkBox()[pri:14, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:00:54 IST" name="DeselectChkBox" finished-at="2024-04-11T22:01:11 IST" duration-ms="16646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeselectChkBox -->
+        <test-method signature="uncheckAllTheChekbox()[pri:15, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:01:11 IST" name="uncheckAllTheChekbox" finished-at="2024-04-11T22:01:29 IST" duration-ms="17467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uncheckAllTheChekbox -->
+        <test-method signature="cofigureNewShiftPattern()[pri:16, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:01:29 IST" name="cofigureNewShiftPattern" finished-at="2024-04-11T22:01:46 IST" duration-ms="17156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cofigureNewShiftPattern -->
+        <test-method signature="downloadShiftPattern()[pri:17, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:01:46 IST" name="downloadShiftPattern" finished-at="2024-04-11T22:01:50 IST" duration-ms="4237" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[sheet is not downloaded expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: sheet is not downloaded expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at com.qa.bps.test.ShiftPatternTest.downloadShiftPattern(ShiftPatternTest.java:144)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadShiftPattern -->
+        <test-method signature="verifyOperatorShiftTabNavigation()[pri:18, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:01:50 IST" name="verifyOperatorShiftTabNavigation" finished-at="2024-04-11T22:01:58 IST" duration-ms="7554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOperatorShiftTabNavigation -->
+        <test-method signature="verifyFiledOfOperatorShiftPattern()[pri:19, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:01:58 IST" name="verifyFiledOfOperatorShiftPattern" finished-at="2024-04-11T22:02:02 IST" duration-ms="4302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFiledOfOperatorShiftPattern -->
+        <test-method signature="verifyHolidayBtnFuntion()[pri:20, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:02:02 IST" name="verifyHolidayBtnFuntion" finished-at="2024-04-11T22:02:05 IST" duration-ms="2892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHolidayBtnFuntion -->
+        <test-method signature="verifyWorkingHoursBtnFuntion()[pri:21, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:02:05 IST" name="verifyWorkingHoursBtnFuntion" finished-at="2024-04-11T22:02:10 IST" duration-ms="4800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkingHoursBtnFuntion -->
+        <test-method signature="verifyDuplicateDatesInOperatorShiftScreen()[pri:22, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:02:10 IST" name="verifyDuplicateDatesInOperatorShiftScreen" finished-at="2024-04-11T22:02:10 IST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDuplicateDatesInOperatorShiftScreen -->
+        <test-method signature="selectTeamAndOperatorFunctionality()[pri:23, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:02:10 IST" name="selectTeamAndOperatorFunctionality" finished-at="2024-04-11T22:02:32 IST" duration-ms="21451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTeamAndOperatorFunctionality -->
+        <test-method signature="markAnOperatorUnavailable()[pri:24, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:02:32 IST" name="markAnOperatorUnavailable" finished-at="2024-04-11T22:03:11 IST" duration-ms="39738" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@placeholder='Search'])[2]"}
+  (Session info: chrome=123.0.6312.106)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44f6ba51e50cd93cfd4a7e0a368aa29, findElement {value=(//input[@placeholder='Search'])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53498/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a44f6ba51e50cd93cfd4a7e0a368aa29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@placeholder='Search'])[2]"}
+  (Session info: chrome=123.0.6312.106)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44f6ba51e50cd93cfd4a7e0a368aa29, findElement {value=(//input[@placeholder='Search'])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53498/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a44f6ba51e50cd93cfd4a7e0a368aa29
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at com.qa.bps.pages.ShiftPattern.verifyOperatorUnavailability(ShiftPattern.java:621)
+at com.qa.bps.test.ShiftPatternTest.markAnOperatorUnavailable(ShiftPatternTest.java:194)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- markAnOperatorUnavailable -->
+        <test-method signature="markAnOperatoravailable()[pri:25, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:03:11 IST" name="markAnOperatoravailable" finished-at="2024-04-11T22:03:13 IST" duration-ms="2044" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='start']"}
+  (Session info: chrome=123.0.6312.106)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44f6ba51e50cd93cfd4a7e0a368aa29, findElement {value=//input[@id='start'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53498/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a44f6ba51e50cd93cfd4a7e0a368aa29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='start']"}
+  (Session info: chrome=123.0.6312.106)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44f6ba51e50cd93cfd4a7e0a368aa29, findElement {value=//input[@id='start'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53498/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a44f6ba51e50cd93cfd4a7e0a368aa29
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at com.qa.bps.pages.ShiftPattern.verifyOperatorLeaveremoved(ShiftPattern.java:697)
+at com.qa.bps.test.ShiftPatternTest.markAnOperatoravailable(ShiftPatternTest.java:203)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- markAnOperatoravailable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.bps.test.ShiftPatternTest@1e4f4a5c]" started-at="2024-04-11T22:03:13 IST" name="tearDown" finished-at="2024-04-11T22:03:14 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.bps.test.ShiftPatternTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
