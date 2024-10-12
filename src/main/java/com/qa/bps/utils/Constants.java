@@ -8,7 +8,7 @@ public class Constants {
 	public static final List<String> EXPECTED_LOGIN_FIELD_NAMES_ = Arrays.asList("Login to your Bodhee account",
 			"Privacy Policy", "Terms of Usage");
 	public static final List<String> EXPECTED_HOME_SCREEN_NAMES_ = Arrays.asList("Microplanning", "Control Tower",
-			"KPI Management", "VSB");
+			"KPI Management", "VSB", "VSB (3 Days)", "VSB (7 Days)");
 	public static final List<String> EXPECTED_CT_MANAGER_SCREEN_NAMES_ = Arrays.asList("Manager View",
 			"Alerts & Notifications", "Shift Summary & Handover", "Plant View", "Product View and Delay Management",
 			"Summary Dashboard");
@@ -130,16 +130,19 @@ public class Constants {
 	public static final List<String> shiftHandoverFooterBtnsList = Arrays.asList("Further Comments", "Cancel",
 			"Handover to Next Shift", "Download Report");
 
-	public static final String campaignFileNew = ".\\src\\test\\resources\\testdata\\fileUploadTest.xlsx";
+	public static final String campaignFileNew = "./src/test/resources/testdata/fileUploadTest.xlsx";
 	public static final String ADD_OP = "User 251 allocated to Team 2, Duration - 1/1/24, 6:00 AM -";
 	public static final String LOG_EVENT_SUCC_TOASTER = "Unavailability Updated Successfully!!!";
 	public static final String LOG_EVENT_ALERT = "Employee Unavailable: hcy-sennass hcy-john, Duration: 2024-01-01 06:00 - 2024-01-01 14:00";
 	public static final String ALERT_SUCC = "Alert message added successfully!";
 	public static final String ALERT_NOTIFICATION = "Start Time - 01/01/2024 06:00, End Time - 02/01/2024 08:00, Alert Message - Test Alert Message";
 	public static final String SIDE_TASK_SUCC = "Side Task Added Successfully";
+	public static final String startTaskOP = "Task status updated successfully";
 
 	public static final List<String> ShiftLeadHeaderBtn = Arrays.asList("Add Operator", "Side Task");
 	public static final List<String> shiftLeadSecHeaderBtns = Arrays.asList("Refresh", "Deallocate Task To Shift Lead",
 			"Reset", "Save");
+	public static final List<String> expectedRecipeMgmtFieled = Arrays.asList("Recipe Name", "Recipe ID", "Description",
+			"Material Name", "Product Name", "Validity Start", "Validity End");
 
 }

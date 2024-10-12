@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.aspectj.util.FileUtil;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -39,7 +40,6 @@ public class DriverFactory {
 
 			WebDriverManager.chromedriver().clearDriverCache().setup();
 			WebDriverManager.chromedriver().clearResolutionCache().setup();
-
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions handlingSSL = new ChromeOptions();
 			handlingSSL.addArguments("headless");
@@ -72,7 +72,7 @@ public class DriverFactory {
 		}
 
 		driver.manage().deleteAllCookies();
-//		 driver.manage().window().maximize();
+		// driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
 		return driver;
 

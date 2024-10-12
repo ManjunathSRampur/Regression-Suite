@@ -15,6 +15,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -24,8 +25,9 @@ public class LoginPage {
 
 	// private by locators
 
-	public WebDriver driver;
+	static WebDriver driver;
 	private ElementUtil eu;
+	int j = 0;
 
 	private By byemailid = By.id("username");
 	private By bydomain = By.xpath("//div[@class='btn-group root noBorder-background']");
@@ -42,15 +44,15 @@ public class LoginPage {
 	List<String> stringdomainnameList = new ArrayList<String>();
 	List<WebElement> domainnamelist = new ArrayList<WebElement>();
 	boolean b;
-//	private ElementUtil driver;
+	private ElementUtil eleUtil;
 
 	public LoginPage(WebDriver driver) {
 
-		this.driver = driver;
-//		driver = new ElementUtil(driver);
+		LoginPage.driver = driver;
+		eleUtil = new ElementUtil(driver);
 	}
 
-	public void doLogin(String email, String pwd) {
+	public HomePage doLogin(String email, String pwd) {
 
 		driver.navigate().refresh();
 		try {
@@ -58,15 +60,15 @@ public class LoginPage {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		driver.findElement(byemailid).sendKeys(email);
+		eleUtil.getElement(byemailid).sendKeys(email);
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 
-		driver.findElement(bypassword).sendKeys(pwd);
-		driver.findElement(byloginbtn).click();
+		eleUtil.getElement(bypassword).sendKeys(pwd);
+		eleUtil.getElement(byloginbtn).click();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -74,33 +76,24 @@ public class LoginPage {
 		}
 		driver.navigate().refresh();
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(6000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		driver.manage().window().maximize();
 
-		Robot robot;
 		try {
-			robot = new Robot();
-			System.out.println("About to zoom out");
-			for (int i = 0; i < 4; i++) {
-				robot.keyPress(KeyEvent.VK_CONTROL);
-				robot.keyPress(KeyEvent.VK_SUBTRACT);
-				robot.keyRelease(KeyEvent.VK_SUBTRACT);
-				robot.keyRelease(KeyEvent.VK_CONTROL);
-			}
-		} catch (AWTException e) {
-			
-			e.printStackTrace();
-		}
-
-		try {
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
-		
+
 			e.printStackTrace();
 		}
+		
+		Dimension initial_size = driver.manage().window().getSize();
+		
+		System.out.println("Dimension is "+initial_size);
+		
+		return new HomePage(driver);
 	}
 
 }

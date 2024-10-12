@@ -14,14 +14,6 @@
 			</run>
 		</groups>
 		<classes>
-
-			<!--<class name="com.qa.bps.test.FileUploadTest" /> 
-			<class name="com.qa.bps.test.PlannerTest" />
-			<class name="com.qa.bps.test.PlanDetailsTest" />-->
-			<!--<class name="com.qa.bps.test.ManagerViewTest" />
-			<class name="com.qa.bps.test.ProductOverviewTest" />
-			<class name="com.qa.bps.test.DailyOperatorManagementTest" />
-			<class name="com.qa.bps.test.ShiftSummaryHandoverTest" /> -->
 		</classes>
 	</test>
 
@@ -33,17 +25,36 @@
 		</groups>
 
 		<classes>
-
-			<class name="com.qa.bps.test.PlannerTestSc00" />
-			<class name="com.qa.bps.test.PlannerTestSc01" />
-			<class name="com.qa.bps.test.PlannerTestSc02" />
-			<class name="com.qa.bps.test.PlannerTestSc03" />
-			<class name="com.qa.bps.test.PlannerTestSc04" />
-			<class name="com.qa.bps.test.PlannerTestSc05" />
-			<class name="com.qa.bps.test.PlannerTestSc06" />
-			
-
+		<class name="com.qa.bps.test.LoginPageTest" />
+			<class name="com.qa.bps.test.HomePageTest" />
+			<class name="com.qa.bps.test.BodheeStudioTest" />
+			<class name="com.qa.bps.test.FileUploadTest" />
+			<class name="com.qa.bps.test.SummaryDashboardTest" />
+			<class name="com.qa.bps.test.vsb7Test" />
+			<class name="com.qa.bps.test.FactoryCalendarTest" />
+			<class name="com.qa.bps.test.ShiftPatternTest" />
+			<class name="com.qa.bps.test.IAMTest" />
+			<class name="com.qa.bps.test.DataManagementTest" />
+			<class name="com.qa.bps.test.RecipeManagementTest" />
+			<class name="com.qa.bps.test.HolidayCalenderTest" />
+			<class name="com.qa.bps.test.PlanValidationTest" />
+			<class name="com.qa.bps.test.SkillMatrixTest" />
+			<class name="com.qa.bps.test.AdminConsoleTest" />
+			<class name="com.qa.bps.test.ProductOverviewTest" />
+			<class name="com.qa.bps.test.DailyOperatorManagementTest" />
+			<class name="com.qa.bps.test.OperatorViewTest" />
+			<class name="com.qa.bps.test.BatchMonitoringTest" />
+			<class name="com.qa.bps.test.ShiftSummaryHandoverTest" />
+			<class name="com.qa.bps.test.VSBTest" />
+			<class name="com.qa.bps.test.ManagerViewTest" />
+			<class name="com.qa.bps.test.PlannerTest" />
+			<class name="com.qa.bps.test.MapProcessTest" />
+			<class name="com.qa.bps.test.TeamManagementTest" />
+			<class name="com.qa.bps.test.FunctionalAreaTest" />
+			<class name="com.qa.bps.test.MaterialMasterTest" />
+			<class name="com.qa.bps.test.passwordPolicyConfigTest" />
+			<class name="com.qa.bps.test.MasterDataTest" />
 		</classes>
 	</test>
 
-</suite>
+</suite> 

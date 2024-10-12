@@ -63,9 +63,6 @@ public class ExtentReportListener implements ITestListener {
 		extentReports.setSystemInfo("Release Date", prop.getProperty("Release_Date"));
 		extentReports.setSystemInfo("Jenkins Build", prop.getProperty("jenkins_Id"));
 		extentReports.setSystemInfo("Application URL", prop.getProperty("url"));
-		extentReports.setSystemInfo("Scheduling_Engine", prop.getProperty("Scheduling_Engine"));
-		extentReports.setSystemInfo("Pre-Processing", prop.getProperty("Pre-Processing"));
-		extentReports.setSystemInfo("Algo_DB_version", prop.getProperty("Algo_DB_version"));
 		extentReports.setSystemInfo("IMP UI", prop.getProperty("IMP_UI"));
 		extentReports.setSystemInfo("IMP Backend", prop.getProperty("IMP_Backend"));
 		extentReports.setSystemInfo("Config UI", prop.getProperty("Bodhee_Studio_Config_UI"));
@@ -73,11 +70,13 @@ public class ExtentReportListener implements ITestListener {
 		extentReports.setSystemInfo("Bodhee Security", prop.getProperty("Bodhee_Security"));
 		extentReports.setSystemInfo("Bodhee Studio File Upload", prop.getProperty("Bodhee_Studio_File_Upload"));
 		extentReports.setSystemInfo("Bodhee Controller", prop.getProperty("Bodhee_Controller"));
-		
+		extentReports.setSystemInfo("Scheduling_Algo", prop.getProperty("Scheduler_Core"));
 		extentReports.setSystemInfo("harbur_matrix", prop.getProperty("Harbur_Matrix"));
 		extentReports.setSystemInfo("BPS Optimizer ", prop.getProperty("BPS_Optimizer"));
 		extentReports.setSystemInfo("API Gateway", prop.getProperty("API_Gateway"));
 		extentReports.setSystemInfo("Notifier", prop.getProperty("Notifier"));
+		extentReports.setSystemInfo("DB_version", prop.getProperty("DB_version"));
+
 		extentReports.setSystemInfo("Browser Name", prop.getProperty("browser_name"));
 		extentReports.setSystemInfo("Browser Version", prop.getProperty("brower_version"));
 		extentReports.setSystemInfo("Run by", prop.getProperty("test_run_by"));

@@ -5,17 +5,20 @@ import java.util.concurrent.TimeUnit;
 
 import org.aspectj.weaver.patterns.ExactAnnotationFieldTypePattern;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class Navigation {
-
+	DataManagement DataManagement;
+	FactoryCalender factCalendar;
 	WebDriver driver;
 
-	private By bodheLogoIMP = By.xpath("//img[@src='./assets/png/bodhee_logo.png']");
-	private By bodheeLogoBodhee = By.cssSelector("img[src='./assets/png/bodhee_logo_new.png']");
+	private By bodheLogoIMP = By.xpath("//img[contains(@src,'bodhee_logo')]");
+	private By bodheeLogoBodhee = By.xpath("//img[contains(@src,'bodhee_logo')]");
 	private By userDropDown = By.xpath("//p[@id='navbarDropdown']");
 	private By bodheeStudioLabel = By.xpath("//a[contains(text(),'Bodhee Studio')]");
 	private By dataManagement = By.xpath("//a[contains(@href,'dataManagement')]");
@@ -23,7 +26,7 @@ public class Navigation {
 	private By factoryCal = By.xpath("//div[@title='Factory Calendar']");
 	private By holidayCal = By.xpath("//div[@title='Holiday Calendar']");
 	private By addNewCalendarBtn = By.xpath("(//div[@class='card tileCard'])[1]");
-	private By factorycalCard = By.xpath("(//div[@class='card tileCard'])[2]");
+	private By factorycalCard = By.xpath("(//div[@class='card tileCard'])[last()]");
 	private By InsideFC = By.xpath("//input[@name='calenderName1']");
 	private By controlTower = By.xpath("//div[contains(text(),'Control Tower')]");
 	private By manager = By.xpath("//div[contains(text(),'Manager')]");
@@ -49,21 +52,40 @@ public class Navigation {
 	private By mapprocess = By.xpath("//a[contains(@href,'builder')]");
 	private By processBuilderText = By.xpath("//li[contains(text(),'Process Builder')]");
 	private By productname = By.xpath("(//div[@class='gantt_tree_content'])[1]");
+	private By clickProductName = By.xpath("(//div[@class='gantt_tree_icon gantt_open'])[1]");
 	private By productionTab = By.xpath("(//div[.='PRODUCTION '])[2]");
 	private By shiftHandover = By.xpath("//div[contains(text(),' Shift Summary & Handover ')]");
-	private By shiftHOText = By.xpath("//a[contains(text(),'Published On ')]");
+	private By shiftHOText = By.xpath("//div[contains(@class,'shift-details-container')]");
 	private By ExpandAll = By.xpath("//a[contains(text(),'Expand All ')]");
 	private By firstTaskName = By.xpath("(//div[@class='gantt_cell gantt_cell_tree'])[4]/div[6]");
-	private By firstBatchNameEle = By.xpath("(//div[@class='gantt_cell gantt_cell_tree'])[2]");
+	public static By adminConsole = By.xpath("//a[contains(@href,'user-preference')]");
+	private By secoundTaskNameEle = By.xpath("(//div[@class='gantt_cell gantt_cell_tree'])[5]/div[6]");
 
+	private By firstBatchNameEle = By.xpath("(//div[@class='gantt_cell gantt_cell_tree'])[2]");
+	public By masterData = By.xpath("//a[@id='v-pills-master']");
 	private By datamanagement = By.xpath("//a[@ng-reflect-router-link='/dataManagement']");
 	public By dataCatalogBtn = By.xpath("//a[contains(text(),'Create Data Catalog')]");
 	private By materialMasterTab = By.xpath("(//div[.='Material Master'])[5]");
 	private By newMaterialMasterBtn = By.xpath("//a[.='New Material']");
 	private By planValidationPage = By.xpath("//a[contains(@href,'planValidation')]");
 	private By validateBtn = By.xpath("//button[.='Validate']");
-
 	public By vsb7days = By.xpath("//div[contains(text(),' VSB (7 Days) ')]");
+	private By getFirstTaskTime = By.xpath("(//div[@data-column-name='start_date'])[4]");
+	private By recipeManagementTab = By.xpath("//div[@title='Recipe Management']");
+	private By recipeBtn = By.xpath("//a[.='Recipe']");
+	private By firstBatchEle = By.xpath("(//div[@class='gantt_tree_content'])[9]");
+
+	String PN;
+	String finalPN;
+	String firstTaskDate = "null";
+	// -----xpath for task group level----
+
+	private By firstTaskGroupName = By.xpath("(//div[@data-column-name='task']/div[@class='gantt_tree_content'])[3]");
+	private By collapseAllBtn = By.xpath("//a[.='Collapse All ']");
+	private By secoundTaskGroupNameEle = By.xpath("((//div[@class='gantt_cell gantt_cell_tree'])[4]/div)[5]");
+
+	public static String firstTaskNames = "test";
+	public static String secoundTaskName;
 
 	public Navigation(WebDriver driver) {
 		this.driver = driver;
@@ -126,17 +148,20 @@ public class Navigation {
 	public void productOverview() throws InterruptedException {
 		try {
 			driver.findElement(bodheLogoIMP).click();
-			Thread.sleep(3000);
+			Thread.sleep(7000);
 		}
 
 		catch (Exception e) {
 			driver.findElement(bodheeLogoBodhee).click();
-			Thread.sleep(5000);
+			Thread.sleep(7000);
 		}
 
 		driver.findElement(controlTower).click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		driver.findElement(manager).click();
+		Thread.sleep(2500);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(1000);
 		driver.findElement(productview).click();
 		Thread.sleep(1000);
@@ -174,7 +199,7 @@ public class Navigation {
 	public void VSB() throws InterruptedException {
 		try {
 			driver.findElement(bodheLogoIMP).click();
-			Thread.sleep(4000);
+			Thread.sleep(6000);
 		}
 
 		catch (Exception e) {
@@ -183,14 +208,14 @@ public class Navigation {
 		}
 
 		driver.findElement(vsb).click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
 	}
 
 	public void IAM() throws InterruptedException {
 		try {
 			driver.findElement(bodheLogoIMP).click();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		}
 
 		catch (Exception e) {
@@ -200,17 +225,17 @@ public class Navigation {
 
 		driver.findElement(userDropDown).click();
 		driver.findElement(labelIAM).click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		if (driver.findElement(createNewUserbtn).isDisplayed()) {
 			System.out.println("Navigated to IAM");
 		}
 
 	}
 
-	public void ManagerView() throws InterruptedException {
+	public boolean ManagerView() throws InterruptedException {
 		try {
 			driver.findElement(bodheLogoIMP).click();
-			Thread.sleep(3000);
+			Thread.sleep(7000);
 		}
 
 		catch (Exception e) {
@@ -219,13 +244,16 @@ public class Navigation {
 		}
 
 		driver.findElement(controlTower).click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		driver.findElement(manager).click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		driver.findElement(managerview).click();
 		Thread.sleep(2000);
 		if (driver.findElement(alertBtn).isDisplayed()) {
 			System.out.println("Navigated to ManagerView");
+			return true;
+		} else {
+			return false;
 		}
 	}
 
@@ -251,15 +279,23 @@ public class Navigation {
 	}
 
 	public void LattestPublishedPlan() throws InterruptedException {
-		Thread.sleep(8000);
-         System.out.println("Inside Home page");
+		Thread.sleep(3000);
+		try {
+			driver.findElement(bodheLogoIMP).click();
+			Thread.sleep(5000);
+		}
+
+		catch (Exception e) {
+			driver.findElement(bodheeLogoBodhee).click();
+			Thread.sleep(5000);
+		}
+
 		driver.findElement(microplanning).click();
 		Thread.sleep(1500);
-		System.out.println("MIcro planning clicked");
 		driver.findElement(planner).click();
-		System.out.println("Planner clicked");
 		Thread.sleep(1500);
-
+		driver.findElement(navigatePlan).click();
+		Thread.sleep(1500);
 	}
 
 	public void ShiftLeadView() throws InterruptedException {
@@ -297,6 +333,9 @@ public class Navigation {
 			Thread.sleep(5000);
 		}
 
+		driver.navigate().refresh();
+		Thread.sleep(6000);
+
 		driver.findElement(userDropDown).click();
 		Thread.sleep(1000);
 		driver.findElement(bodheeStudioLabel).click();
@@ -311,20 +350,22 @@ public class Navigation {
 	public void MapProcess() throws InterruptedException {
 		try {
 			driver.findElement(bodheLogoIMP).click();
-			Thread.sleep(3000);
+			Thread.sleep(9000);
 		}
 
 		catch (Exception e) {
 			driver.findElement(bodheeLogoBodhee).click();
-			Thread.sleep(5000);
+			Thread.sleep(9000);
 		}
 
+		driver.navigate().refresh();
+		Thread.sleep(9000);
 		driver.findElement(userDropDown).click();
 		Thread.sleep(1000);
 		driver.findElement(bodheeStudioLabel).click();
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		driver.findElement(mapprocess).click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		if (driver.findElement(processBuilderText).isDisplayed()) {
 			System.out.println("Navigated to Map Process");
 		}
@@ -333,24 +374,38 @@ public class Navigation {
 
 	public String GetProductDetailsFromPlanner() throws InterruptedException {
 		driver.findElement(productionTab).click();
-		Thread.sleep(4000);
-		String PN = driver.findElement(productname).getText();
-		System.out.println(PN);
-		String finalPN = " " + PN + " ";
-		System.out.println(finalPN);
-		return finalPN;
+		Thread.sleep(15000);
+
+		if (EventProperties.actionLevel.equals("Task Group")) {
+			PN = driver.findElement(productname).getText();
+			String arr[] = PN.split("-");
+			PN = arr[0];
+			System.out.println("product name in planner " + PN);
+			finalPN = " " + PN + " ";
+			System.out.println("product name after comvert " + finalPN);
+			return finalPN;
+		}
+
+		else {
+
+			PN = driver.findElement(productname).getText();
+			System.out.println("product name in planner " + PN);
+			finalPN = " " + PN + " ";
+			System.out.println("product name after comvert " + finalPN);
+			return finalPN;
+		}
 
 	}
 
-	public void Shifthandover() throws InterruptedException {
+	public boolean Shifthandover() throws InterruptedException {
 		try {
 			driver.findElement(bodheLogoIMP).click();
-			Thread.sleep(3000);
+			Thread.sleep(7000);
 		}
 
 		catch (Exception e) {
 			driver.findElement(bodheeLogoBodhee).click();
-			Thread.sleep(3000);
+			Thread.sleep(7000);
 		}
 
 		driver.findElement(controlTower).click();
@@ -362,7 +417,9 @@ public class Navigation {
 
 		if (driver.findElement(shiftHOText).isDisplayed()) {
 			System.out.println("navigated to Shift Handover");
+			return true;
 		}
+		return false;
 
 	}
 
@@ -409,7 +466,32 @@ public class Navigation {
 	public void DataManagement() throws InterruptedException {
 		try {
 			driver.findElement(bodheLogoIMP).click();
-			Thread.sleep(3000);
+			Thread.sleep(9000);
+		}
+
+		catch (Exception e) {
+			driver.findElement(bodheeLogoBodhee).click();
+			Thread.sleep(9000);
+		}
+
+		driver.findElement(userDropDown).click();
+		Thread.sleep(6000);
+		driver.findElement(bodheeStudioLabel).click();
+		Thread.sleep(3000);
+		driver.findElement(datamanagement).click();
+		Thread.sleep(4000);
+		if (driver.findElement(dataCatalogBtn).isDisplayed()) {
+			System.out.println("Navigated to data management");
+		}
+
+	}
+
+	public void FactoryCalendar() throws InterruptedException {
+		DataManagement = new DataManagement(driver);
+		factCalendar = new FactoryCalender(driver);
+		try {
+			driver.findElement(bodheLogoIMP).click();
+			Thread.sleep(5000);
 		}
 
 		catch (Exception e) {
@@ -420,10 +502,14 @@ public class Navigation {
 		driver.findElement(userDropDown).click();
 		Thread.sleep(1000);
 		driver.findElement(bodheeStudioLabel).click();
-		Thread.sleep(3000);
+		Thread.sleep(18000);
 		driver.findElement(datamanagement).click();
 		Thread.sleep(4000);
-		if (driver.findElement(dataCatalogBtn).isDisplayed()) {
+		driver.findElement(DataManagement.masterData).click();
+		Thread.sleep(2000);
+		driver.findElement(DataManagement.factorycalendar).click();
+		Thread.sleep(2000);
+		if (driver.findElement(factCalendar.newCalendar).isDisplayed()) {
 			System.out.println("Navigated to data management");
 		}
 
@@ -443,21 +529,52 @@ public class Navigation {
 		Thread.sleep(4000);
 	}
 
-	public boolean planValidation() throws InterruptedException {
+	public boolean materialMaster() throws InterruptedException {
+		DataManagement = new DataManagement(driver);
+		factCalendar = new FactoryCalender(driver);
 		try {
 			driver.findElement(bodheLogoIMP).click();
-			Thread.sleep(3000);
+			Thread.sleep(7000);
 		}
 
 		catch (Exception e) {
 			driver.findElement(bodheeLogoBodhee).click();
-			Thread.sleep(5000);
+			Thread.sleep(7000);
 		}
 
 		driver.findElement(userDropDown).click();
 		Thread.sleep(1000);
 		driver.findElement(bodheeStudioLabel).click();
+		Thread.sleep(7000);
+		driver.findElement(datamanagement).click();
+		Thread.sleep(4000);
+		driver.findElement(DataManagement.masterData).click();
 		Thread.sleep(3000);
+		driver.findElement(materialMasterTab).click();
+		Thread.sleep(1000);
+		try {
+			driver.findElement(newMaterialMasterBtn).isDisplayed();
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+	public boolean planValidation() throws InterruptedException {
+		try {
+			driver.findElement(bodheLogoIMP).click();
+			Thread.sleep(7000);
+		}
+
+		catch (Exception e) {
+			driver.findElement(bodheeLogoBodhee).click();
+			Thread.sleep(7000);
+		}
+
+		driver.findElement(userDropDown).click();
+		Thread.sleep(1000);
+		driver.findElement(bodheeStudioLabel).click();
+		Thread.sleep(7000);
 
 		driver.findElement(planValidationPage).click();
 		Thread.sleep(2000);
@@ -468,6 +585,216 @@ public class Navigation {
 		} catch (Exception e) {
 			return false;
 		}
+
+	}
+
+	public boolean navigateRecipeManagement() throws InterruptedException {
+		try {
+			driver.findElement(bodheLogoIMP).click();
+			Thread.sleep(7000);
+		}
+
+		catch (Exception e) {
+			driver.findElement(bodheeLogoBodhee).click();
+			Thread.sleep(7000);
+		}
+
+		driver.findElement(userDropDown).click();
+		Thread.sleep(1000);
+		driver.findElement(bodheeStudioLabel).click();
+		Thread.sleep(7000);
+		driver.findElement(datamanagement).click();
+		Thread.sleep(4000);
+		driver.findElement(masterData).click();
+		Thread.sleep(3000);
+		driver.findElement(recipeManagementTab).click();
+		Thread.sleep(2000);
+		try {
+			driver.findElement(recipeBtn).isDisplayed();
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+
+	}
+
+	public void addValueToEventProp() throws InterruptedException {
+		Thread.sleep(3000);
+		try {
+			driver.findElement(bodheLogoIMP).click();
+			Thread.sleep(5000);
+		}
+
+		catch (Exception e) {
+			driver.findElement(bodheeLogoBodhee).click();
+			Thread.sleep(5000);
+		}
+
+		driver.findElement(microplanning).click();
+		Thread.sleep(1500);
+		driver.findElement(planner).click();
+		Thread.sleep(1500);
+		driver.findElement(navigatePlan).click();
+		Thread.sleep(1500);
+
+		driver.findElement(productionTab).click();
+		Thread.sleep(15000);
+		String PN = driver.findElement(productname).getText();
+		System.out.println(PN);
+		finalPN = " " + PN + " ";
+		System.out.println("Final product Name is :" + finalPN);
+		driver.findElement(ExpandAll).click();
+
+		if (EventProperties.actionLevel.equals("Task Group")) {
+			System.out.println("inside task group");
+
+			firstTaskNames = driver.findElement(firstTaskGroupName).getText();
+
+			Thread.sleep(1000);
+
+			String firstTaskGroupNameInPlanner = firstTaskNames = driver.findElement(firstTaskGroupName).getText();
+
+			driver.findElement(collapseAllBtn).click();
+
+			Thread.sleep(500);
+
+			driver.findElement(clickProductName).click();
+
+			Thread.sleep(500);
+
+			driver.findElement(clickProductName).click();
+
+			Thread.sleep(500);
+
+			secoundTaskName = driver.findElement(secoundTaskGroupNameEle).getText();
+
+			System.out.println("First task group Name in planner " + firstTaskNames);
+
+			System.out.println("Secound task group Name in planner " + secoundTaskName);
+
+			String firstTaskTime = driver.findElement(getFirstTaskTime).getText();
+
+			this.firstTaskDate = firstTaskTime.replace(" ", "-");
+
+			System.out.println("First task time is " + firstTaskTime);
+
+			String firstTaskDate = firstTaskTime.replaceAll("\\s.*", "");
+
+			System.out.println("First task date is " + firstTaskDate);
+
+			String arr[] = firstTaskDate.split("-");
+			firstTaskDate = arr[1] + arr[2] + arr[0];
+
+			System.out.println("First task date after convert is " + firstTaskDate);
+
+			EventProperties.task_Date = firstTaskDate;
+
+			EventProperties.delayTime = firstTaskDate;
+
+			EventProperties.delayCloseTime = firstTaskDate;
+
+			EventProperties.earlyStartTime = firstTaskDate;
+
+			EventProperties.earlyClose = firstTaskDate;
+
+			EventProperties.eqUnAvlDate = firstTaskDate;
+
+			System.out.println("First task date in event prop " + EventProperties.task_Date);
+
+			driver.findElement(collapseAllBtn).click();
+
+			driver.findElement(clickProductName).click();
+
+			Thread.sleep(500);
+
+			String firstBatchNo = driver.findElement(firstBatchEle).getText();
+
+			System.out.println("First Batc Number in planner " + firstBatchNo);
+
+			EventProperties.firstBatchNumber = firstBatchNo;
+
+			EventProperties.firstTaskGroupName = firstTaskGroupNameInPlanner;
+			System.out.println("First Task froup Name in Planner :" + firstTaskGroupNameInPlanner);
+
+		}
+
+		else {
+
+			String firstTaskGroupNameInPlanner = firstTaskNames = driver.findElement(firstTaskGroupName).getText();
+
+			firstTaskNames = driver.findElement(firstTaskName).getText();
+
+			secoundTaskName = driver.findElement(secoundTaskNameEle).getText();
+
+			System.out.println("First task Name in planner " + firstTaskNames);
+
+			System.out.println("secound task Name in planner " + secoundTaskName);
+
+			String firstTaskTime = driver.findElement(getFirstTaskTime).getText();
+
+			this.firstTaskDate = firstTaskTime.replace(" ", "-");
+
+			System.out.println("First task time is " + firstTaskTime);
+
+			String firstTaskDate = firstTaskTime.replaceAll("\\s.*", "");
+
+			System.out.println("First task date is " + firstTaskDate);
+
+			String arr[] = firstTaskDate.split("-");
+			firstTaskDate = arr[1] + arr[2] + arr[0];
+
+			System.out.println("First task date after convert is " + firstTaskDate);
+
+			EventProperties.task_Date = firstTaskDate;
+
+			EventProperties.delayTime = firstTaskDate;
+
+			EventProperties.delayCloseTime = firstTaskDate;
+
+			EventProperties.earlyStartTime = firstTaskDate;
+
+			EventProperties.earlyClose = firstTaskDate;
+
+			EventProperties.eqUnAvlDate = firstTaskDate;
+
+			System.out.println("First task date in event prop " + EventProperties.task_Date);
+
+			driver.findElement(collapseAllBtn).click();
+
+			driver.findElement(clickProductName).click();
+
+			Thread.sleep(500);
+
+			String firstBatchNo = driver.findElement(firstBatchEle).getText();
+
+			System.out.println("First Batc Number in planner " + firstBatchNo);
+
+			EventProperties.firstBatchNumber = firstBatchNo;
+
+			EventProperties.firstTaskGroupName = firstTaskGroupNameInPlanner;
+			System.out.println("First Task froup Name in Planner :" + firstTaskGroupNameInPlanner);
+		}
+
+	}
+
+	public void adminConsole() throws InterruptedException {
+
+		try {
+			driver.findElement(bodheLogoIMP).click();
+			Thread.sleep(7000);
+		}
+
+		catch (Exception e) {
+			driver.findElement(bodheeLogoBodhee).click();
+			Thread.sleep(7000);
+		}
+
+		driver.findElement(userDropDown).click();
+		Thread.sleep(1000);
+		driver.findElement(bodheeStudioLabel).click();
+		Thread.sleep(7000);
+		driver.findElement(adminConsole).click();
+		Thread.sleep(2500);
 
 	}
 
